@@ -1,0 +1,23 @@
+{
+    "workers":
+    [
+        {
+            "name": "m1",
+            "address": "192.168.0.8",
+            "port": 5555,
+            "delays": {
+                "location_l": 20,
+                "location_h": 30,
+                "performance": 1.8
+            }
+        }
+    ],
+
+    "balancer":
+    {
+        "name": "balancer",
+
+        "rr_weights_per_machine": [1],
+        "lc_weights_per_machine": [1.0]
+    }
+}

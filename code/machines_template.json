@@ -1,0 +1,44 @@
+{
+    "workers":
+    [
+        {
+            "name": "m1",
+            "address": "0.0.0.0",
+            "port": 5555,
+            "delays": {
+                "location_l": 20,
+                "location_h": 30,
+                "performance": 1.0
+            }
+        },
+        {
+            "name": "m2",
+            "address": "0.0.0.0",
+            "port": 5555,
+            "delays": {
+                "location_l": 20,
+                "location_h": 30,
+                "performance": 1.2
+            }
+        },
+        {
+            "name": "m3",
+            "address": "0.0.0.0",
+            "port": 5555,
+            "delays": {
+                "location_l": 20,
+                "location_h": 30,
+                "performance": 1.5
+            }
+        }
+    ],
+
+    "balancer":
+    {
+        "name": "balancer",
+        "address": "localhost",
+
+        "rr_weights_per_machine": [1, 2, 5, 3, 4],
+        "lc_weights_per_machine": [1.8, 1.5, 1.0, 1.3, 1.6]
+    }
+}
