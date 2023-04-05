@@ -6,9 +6,8 @@ import random
 import sys
 import time
 import typing
-import matplotlib.pyplot as plt
-import numpy as np
 import threading
+import pickle
 
 class Machine:
     def __init__(self, name: str, address: str, port: int) -> None:
@@ -327,6 +326,13 @@ def get_least_con_machine(with_weights: bool = False) -> int:
     return min_ind
 
 def plot(data: typing.List[typing.Tuple[int, typing.List[typing.List[float]]]]):
+    file_out = open(r"./data.pkl", "wb")
+    pickle.dump(data, file_out)
+    file_out.close()
+    return
+
+    import matplotlib.pyplot as plt
+    import numpy as np
     x_labels: typing.List[int] = []
     policies_labels: typing.List[str] = ["Random", "Round Robin", "Weighted Round Robin", "Least connections", "Weighted least connections"]
 
