@@ -3,7 +3,7 @@
     [
         {
             "name": "m1",
-            "address": "192.168.011",
+            "address": "192.168.11",
             "port": 5555,
             "delays": {
                 "location_l": 20,
@@ -13,7 +13,7 @@
         },
         {
             "name": "m2",
-            "address": "192.168.012",
+            "address": "192.168.12",
             "port": 5555,
             "delays": {
                 "location_l": 20,
@@ -23,7 +23,7 @@
         },
         {
             "name": "m3",
-            "address": "192.168.013",
+            "address": "192.168.13",
             "port": 5555,
             "delays": {
                 "location_l": 20,
